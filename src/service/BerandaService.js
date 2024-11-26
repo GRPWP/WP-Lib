@@ -331,7 +331,7 @@ export const BerandaService = {
                 image: '/demo/img/westpapua/8.png',
                 description: 'West Papua Situation Update: March 2023',
                 lang: 'EN',
-                author: 'ULMWP - Prov Gov',
+                author: 'ULMWP',
                 year: '2023',
                 datetime: '2024-11-25 03:21',
                 category: 'ULMWP',

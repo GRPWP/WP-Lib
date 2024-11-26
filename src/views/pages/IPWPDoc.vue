@@ -187,7 +187,7 @@ const resetDataView = () => {
                             <div class="pt-4">
                                 <div class="flex flex-row justify-between items-start gap-1">
                                     <div>
-                                        <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.category }}</span>
+                                        <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.author }}</span>
 
                                         <!-- <Tag icon="pi pi-download" value="100" class="mr-3 bg-surface-50 text-yellow-500 text-sm"></Tag> -->
                                     </div>
