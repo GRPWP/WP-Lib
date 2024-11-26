@@ -10,7 +10,7 @@ export default defineConfig({
     optimizeDeps: {
         noDiscovery: true
     },
-    base: '/WP-Lib/',
+    // base: '/WP-Lib/',
     plugins: [
         vue(),
         Components({
