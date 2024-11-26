@@ -10,16 +10,17 @@ export default defineConfig({
     optimizeDeps: {
         noDiscovery: true
     },
+    base: '/WP-Lib/',
     plugins: [
         vue(),
         Components({
             resolvers: [PrimeVueResolver()]
         })
     ],
-    server: {
-        host: true, // Membuka server ke host publik
-        port: 3000 // Port yang digunakan (opsional)
-    },
+    // server: {
+    //     host: true, // Membuka server ke host publik
+    //     port: 3000 // Port yang digunakan (opsional)
+    // },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))

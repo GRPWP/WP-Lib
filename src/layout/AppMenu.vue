@@ -6,7 +6,7 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Beranda', icon: 'pi pi-fw pi-home', to: '/' }]
+        items: [{ label: 'Beranda', icon: 'pi pi-fw pi-home', to: '/WP-Library' }]
     },
     {
         label: 'Kategori',
