@@ -1,0 +1,1 @@
+.effect-glass{box-shadow:0 4px 8px #0003;border:1px;border-radius:8px;transition:transform .3s ease-in-out,box-shadow .3s ease-in-out}.effect-glass:hover{transform:scale(1.05);box-shadow:0 10px 15px #0000001a,0 4px 6px #00000014}@media only screen and (max-width: 768px) and (orientation: portrait){.sakai{display:none}}
