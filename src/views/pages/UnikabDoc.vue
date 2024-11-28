@@ -154,7 +154,7 @@ const resetDataView = () => {
 
 <template>
     <div class="flex flex-col">
-        <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows">
+        <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows" :pageLinkSize="3">
             <template #header>
                 <div class="flex flex-wrap gap-2">
                     <IconField>

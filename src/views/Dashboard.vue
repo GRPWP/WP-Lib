@@ -143,7 +143,7 @@ const resetDataView = () => {
 
 <template>
     <div class="flex flex-col">
-        <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows">
+        <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows" :pageLinkSize="3">
             <template #header>
                 <div class="flex flex-wrap gap-2">
                     <IconField>
@@ -162,6 +162,7 @@ const resetDataView = () => {
                     </SelectButton>
                 </div>
             </template>
+
             <template #grid="slotProps">
                 <div class="grid grid-cols-12 gap-0">
                     <div v-for="(item, index) in slotProps.items" :key="index" class="col-span-6 sm:col-span-3 lg:col-span-2 p-2">
@@ -177,8 +178,6 @@ const resetDataView = () => {
                                 <div class="flex flex-row justify-between items-start gap-1">
                                     <div>
                                         <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.category }}</span>
-
-                                        <!-- <Tag icon="pi pi-download" value="100" class="mr-3 bg-surface-50 text-yellow-500 text-sm"></Tag> -->
                                     </div>
                                     <div class="p-1" style="border-radius: 15px">
                                         <div
@@ -194,7 +193,6 @@ const resetDataView = () => {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="flex flex-col gap-2">
                                     <div class="text-sm font-medium mt-3">{{ item.title }}</div>
                                 </div>
