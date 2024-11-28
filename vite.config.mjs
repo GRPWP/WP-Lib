@@ -17,10 +17,10 @@ export default defineConfig({
             resolvers: [PrimeVueResolver()]
         })
     ],
-    // server: {
-    //     host: true, // Membuka server ke host publik
-    //     port: 3000 // Port yang digunakan (opsional)
-    // },
+    server: {
+        host: true, // Membuka server ke host publik
+        port: 3000 // Port yang digunakan (opsional)
+    },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))

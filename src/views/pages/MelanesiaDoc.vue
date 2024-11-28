@@ -176,10 +176,10 @@ const resetDataView = () => {
             <template #grid="slotProps">
                 <div class="grid grid-cols-12 gap-0">
                     <div v-for="(item, index) in slotProps.items" :key="index" class="col-span-6 sm:col-span-3 lg:col-span-2 p-2">
-                        <div class="p-1 border border-surface-200 dark:border-surface-700 bg-surface-0 dark:bg-surface-900 rounded flex flex-col">
+                        <div class="p-1 border border-surface-200 dark:border-surface-700 bg-surface-0 dark:bg-surface-900 rounded flex flex-col" @click="openDrawer(item, index)">
                             <div class="bg-surface-50 flex justify-center rounded">
                                 <div class="relative mx-auto">
-                                    <img class="rounded w-full" :src="`${item.image}`" :alt="item.title" style="max-width: 100%" @click="openDrawer(item, index)" />
+                                    <img class="rounded w-full" :src="`${item.image}`" :alt="item.title" style="max-width: 100%" />
                                     <span v-if="isWithin24Hours(item.datetime)" class="pi pi-spin pi-clock absolute text-green-500 text-sm" style="right: 4px; top: 4px"></span>
                                     <Tag :value="item.lang" :severity="getSeverity(item)" class="absolute dark:!bg-surface-900" style="left: 4px; top: 4px"></Tag>
                                 </div>
@@ -187,7 +187,7 @@ const resetDataView = () => {
                             <div class="pt-4">
                                 <div class="flex flex-row justify-between items-start gap-1">
                                     <div>
-                                        <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.category }}</span>
+                                        <span class="font-medium text-surface-500 dark:text-surface-400 text-sm">{{ item.author }}</span>
 
                                         <!-- <Tag icon="pi pi-download" value="100" class="mr-3 bg-surface-50 text-yellow-500 text-sm"></Tag> -->
                                     </div>
