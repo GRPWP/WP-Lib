@@ -156,7 +156,7 @@ const resetDataView = () => {
     <div class="flex flex-col">
         <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows">
             <template #header>
-                <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex flex-wrap gap-2">
                     <IconField>
                         <InputIcon class="pi pi-search" />
                         <InputText v-model="value1" placeholder="Search" />

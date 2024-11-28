@@ -145,7 +145,7 @@ const resetDataView = () => {
     <div class="flex flex-col">
         <DataView :value="filteredProducts" :layout="layout" :paginator="true" :rows="rows">
             <template #header>
-                <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex flex-wrap gap-2">
                     <IconField>
                         <InputIcon class="pi pi-search" />
                         <InputText v-model="value1" placeholder="Search" />
@@ -168,7 +168,7 @@ const resetDataView = () => {
                         <div class="p-1 border border-surface-200 dark:border-surface-700 bg-surface-0 dark:bg-surface-900 rounded flex flex-col" @click="openDrawer(item, index)">
                             <div class="bg-surface-50 flex justify-center rounded">
                                 <div class="relative mx-auto">
-                                    <img class="rounded w-full" :src="`${item.image}`" :alt="item.title" style="max-width: 100%"  />
+                                    <img class="rounded w-full" :src="`${item.image}`" :alt="item.title" style="max-width: 100%" />
                                     <span v-if="isWithin24Hours(item.datetime)" class="pi pi-spin pi-clock absolute text-green-500 text-sm" style="right: 4px; top: 4px"></span>
                                     <Tag :value="item.lang" :severity="getSeverity(item)" class="absolute dark:!bg-surface-900" style="left: 4px; top: 4px"></Tag>
                                 </div>
