@@ -5,11 +5,28 @@ import AppMenuItem from './AppMenuItem.vue';
 
 const model = ref([
     {
-        label: 'Home',
-        items: [{ label: 'Beranda', icon: 'pi pi-fw pi-home', to: '/' }]
+        label: 'Negara West Papua',
+        items: [
+            { label: 'Beranda', icon: 'pi pi-fw pi-home', to: '/' },
+            { label: 'Profil Negara', icon: 'pi pi-fw pi-circle', class: 'rotated-icon' },
+
+            {
+                label: 'Wilayah Adat',
+                icon: 'pi pi-fw pi-circle',
+                items: [
+                    { label: 'Mamta', icon: 'pi pi-fw pi-circle', class: 'rotated-icon' },
+                    { label: 'Saireri', icon: 'pi pi-fw pi-circle' },
+                    { label: 'Douberay', icon: 'pi pi-fw pi-circle' },
+                    { label: 'Bomberay', icon: 'pi pi-fw pi-circle' },
+                    { label: 'Mee Pago', icon: 'pi pi-fw pi-circle' },
+                    { label: 'La Pago', icon: 'pi pi-fw pi-circle' },
+                    { label: 'Anim Ha', icon: 'pi pi-fw pi-circle' }
+                ]
+            }
+        ]
     },
     {
-        label: 'Kategori',
+        label: 'Kategori Arsip',
         items: [
             { label: 'IPWP', icon: 'pi pi-fw pi-circle', to: '/pages/ipwp', class: 'rotated-icon' },
             { label: 'ILWP', icon: 'pi pi-fw pi-circle', to: '/pages/ilwp' },
