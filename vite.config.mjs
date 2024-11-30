@@ -35,11 +35,11 @@ export default defineConfig({
                 ]
             },
             manifest: {
-                name: 'West Papua Library',
+                name: 'West Papua Library by GRPWP',
                 short_name: 'WP Lib',
                 description: 'West Papua Library by GRPWP',
-                theme_color: '#ffffff',
-                background_color: '#ffffff',
+                theme_color: '#0A831C',
+                background_color: '#0A831C',
                 display: 'standalone',
                 icons: [
                     {
