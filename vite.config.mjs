@@ -11,7 +11,6 @@ export default defineConfig({
     optimizeDeps: {
         noDiscovery: true
     },
-    // base: '/WP-Lib/',
     plugins: [
         vue(),
         Components({
@@ -20,6 +19,7 @@ export default defineConfig({
         VitePWA({
             registerType: 'prompt',
             workbox: {
+                maximumFileSizeToCacheInBytes: 4 * 1024 * 1024, // Maksimum ukuran file 4 MB
                 runtimeCaching: [
                     {
                         urlPattern: /.(?:png|jpg|jpeg|svg|gif|webp)$/,
@@ -43,12 +43,12 @@ export default defineConfig({
                 display: 'standalone',
                 icons: [
                     {
-                        src: 'public/demo/img/grpwp-192x192.png',
+                        src: 'demo/img/grpwp-192x192.png',
                         sizes: '192x192',
                         type: 'image/png'
                     },
                     {
-                        src: 'public/demo/img/grpwp-512x512.png',
+                        src: 'demo/img/grpwp-512x512.png',
                         sizes: '512x512',
                         type: 'image/png'
                     }
@@ -63,6 +63,22 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
+        }
+    },
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    if (id.includes('node_modules')) {
+                        return id.toString().split('node_modules/')[1].split('/')[0].toString();
+                    }
+                }
+            }
+        },
+        terserOptions: {
+            compress: {
+                drop_console: true // Menghapus console.log pada hasil build
+            }
         }
     }
 });
