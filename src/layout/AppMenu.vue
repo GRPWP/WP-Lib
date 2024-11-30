@@ -8,19 +8,19 @@ const model = ref([
         label: 'Negara West Papua',
         items: [
             { label: 'Beranda', icon: 'pi pi-fw pi-home', to: '/' },
-            { label: 'Profil Negara', icon: 'pi pi-fw pi-circle', class: 'rotated-icon' },
+            { label: 'Profil Negara', icon: 'pi pi-fw pi-circle', to: '/nwp/profil', class: 'rotated-icon' },
 
             {
                 label: 'Wilayah Adat',
                 icon: 'pi pi-fw pi-circle',
                 items: [
-                    { label: 'Mamta', icon: 'pi pi-fw pi-circle', class: 'rotated-icon' },
-                    { label: 'Saireri', icon: 'pi pi-fw pi-circle' },
-                    { label: 'Douberay', icon: 'pi pi-fw pi-circle' },
-                    { label: 'Bomberay', icon: 'pi pi-fw pi-circle' },
-                    { label: 'Mee Pago', icon: 'pi pi-fw pi-circle' },
-                    { label: 'La Pago', icon: 'pi pi-fw pi-circle' },
-                    { label: 'Anim Ha', icon: 'pi pi-fw pi-circle' }
+                    { label: 'Mamta', icon: 'pi pi-fw pi-circle', to: '/nwp/mamta', class: 'rotated-icon' },
+                    { label: 'Saireri', icon: 'pi pi-fw pi-circle', to: '/nwp/saireri' },
+                    { label: 'Douberay', icon: 'pi pi-fw pi-circle', to: '/nwp/douberay' },
+                    { label: 'Bomberay', icon: 'pi pi-fw pi-circle', to: '/nwp/bomberay' },
+                    { label: 'Mee Pago', icon: 'pi pi-fw pi-circle', to: '/nwp/meepago' },
+                    { label: 'La Pago', icon: 'pi pi-fw pi-circle', to: '/nwp/lapago' },
+                    { label: 'Anim Ha', icon: 'pi pi-fw pi-circle', to: '/nwp/animha' }
                 ]
             }
         ]

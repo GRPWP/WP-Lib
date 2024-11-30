@@ -42,6 +42,46 @@ const router = createRouter({
                     path: '/pages/westpapua',
                     name: 'westpapua',
                     component: () => import('@/views/pages/WestPapuaDoc.vue')
+                },
+                {
+                    path: '/nwp/profil',
+                    name: 'profil',
+                    component: () => import('@/views/nwp/ProfilNegaraDoc.vue')
+                },
+                {
+                    path: '/nwp/mamta',
+                    name: 'mamta',
+                    component: () => import('@/views/nwp/MamtaDoc.vue')
+                },
+                {
+                    path: '/nwp/saireri',
+                    name: 'saireri',
+                    component: () => import('@/views/nwp/SaireriDoc.vue')
+                },
+                {
+                    path: '/nwp/douberay',
+                    name: 'douberay',
+                    component: () => import('@/views/nwp/DouberayDoc.vue')
+                },
+                {
+                    path: '/nwp/bomberay',
+                    name: 'bomberay',
+                    component: () => import('@/views/nwp/BomberayDoc.vue')
+                },
+                {
+                    path: '/nwp/meepago',
+                    name: 'meepago',
+                    component: () => import('@/views/nwp/MeePagoDoc.vue')
+                },
+                {
+                    path: '/nwp/lapago',
+                    name: 'lapago',
+                    component: () => import('@/views/nwp/LaPagoDoc.vue')
+                },
+                {
+                    path: '/nwp/animha',
+                    name: 'animha',
+                    component: () => import('@/views/nwp/AnimHaDoc.vue')
                 }
             ]
         }
